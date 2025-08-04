@@ -25,5 +25,12 @@ const employee2: Employee = {
 function logEmployee(employee:Employee): void {
     console.log('--- Employee Details ---');
     console.log('Name: ${employee.fullName[0]} ${employee.fullName[1]}');
-    console.log('Age');
+   console.log('Age: ${employee.age}');
+    console.log('Department: ${employee.department}');
+    console.log('Skills: ${employee.skills.join(",")}');
+    console.log('Active: ${employee.isActive ? "yes" : "No"}');
+    console.log('------------------------');
 }
+
+logEmployee(employee1);
+logEmployee(employee2);
